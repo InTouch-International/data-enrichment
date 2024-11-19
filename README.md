@@ -6,7 +6,7 @@ InTouch Services Library is a collection of API endpoints encapsulated in a Post
 
 - [Authorisation](#authorization)
 - [API Endpoints](#api-endpoints)
-    - [Address List]](#address-list)
+    - [Address List](#address-list)
     - [Email Address List)](#email-address-list)
     - [Telephone List)](#telephone-list)
     - [People List](#people-list)
