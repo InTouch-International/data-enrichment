@@ -4,12 +4,18 @@ InTouch Services Library is a collection of API endpoints encapsulated in a Post
 
 ## Table of Contents
 
-- [Authorisation](#authorization)
+- [Authorisation](#authorisation)
 - [API Endpoints](#api-endpoints)
     - [Address List](#address-list)
     - [Email Address List)](#email-address-list)
     - [Telephone List)](#telephone-list)
     - [People List](#people-list)
+    - [IDV List](#idv-list)
+    - [IDV List Summary](#idv-list-summary)
+    - [IDV Marital Status](#idv-marital-status)
+    - [IDV Deceased Status](#idv-deceased-status)
+    - [Dynamic Wrapper IDV Enquiry](#dynamic-wrapper-idv-enquiry)
+    - [Dynamic Wrapper Eagle Eye](#dynamic-wrapper-eagle-eye)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Environment Configuration](#environment-configuration)
@@ -37,6 +43,30 @@ This endpoint returns list of telephone numbers for an individual with a given I
 
 Returns a list of people linked to the given ID Number.
 
+### IDV List
+
+Performs full identification verification for an individual with a given ID Number.
+
+### IDV List Summary	
+
+Returns summarised identification verification without a photo for an individual with a given ID Number.
+
+### IDV Marital Status
+
+This endpoint returns the marital status of an individual with a given ID Number.
+
+### IDV Deceased Status
+
+This endpoint returns the deceased status from DHA of an individual with a given ID Number.
+
+### Dynamic Wrapper IDV Enquiry
+
+This endpoint performs a templated IDV enquiry for an individual with a given ID Number.
+
+### Dynamic Wrapper Eagle Eye
+
+This endpoint performs a templated Eagle Eye enquiry for an individual with a given ID Number.
+
 ## Setup
 
 1. Clone the repository to your local machine.
@@ -50,20 +80,19 @@ Returns a list of people linked to the given ID Number.
 
 ## Environment Configuration
 
-The repository includes an environment configuration file named `isl-dev.postman_environment.json`. This file contains predefined environment variables to facilitate testing and development in different stages. Here's how you can use it:
+The repository includes an environment configuration file named `isl-prod.postman_environment.json`. This file contains predefined environment variables to facilitate testing and development in different stages. Here's how you can use it:
 
 ### Importing Environment Configuration
 
-1. Download the `isl-dev.postman_environment.json` file from the repository.
+1. Download the `isl-prod.postman_environment.json` file from the repository.
 2. Open Postman, click on the gear icon in the top right corner to manage environments.
-3. Click the Import button and select the `isl-dev.postman_environment.json` file to import the environment configuration.
+3. Click the Import button and select the `isl-prod.postman_environment.json` file to import the environment configuration.
 
 ### Utilising Environment Variables
 
-The `isl-dev.postman_environment.json` file defines the following environment variables:
+The `isl-prod.postman_environment.json` file defines the following environment variables:
 
 - `base_url`: The base URL for the API endpoints.
-- `admin_url`: The URL for admin access.
 - `auth_url`: The URL for authorisation requests.
 - `token`: The bearer token for authorisation. This will be populated after making a successful authorisation request.
 - `client_id`: Your client ID for the authorisation request.
@@ -77,7 +106,7 @@ Here's an example of how you'd use an environment variable in a request:
 
 - URL: `{{base_url}}?id=2ca14077-9213-4043-a4dc-315d95e6b09b`
 
-The `{{base_url}}` placeholder will be replaced with the actual value defined in the `isl-dev.postman_environment.json` file, making the request URL: `https://api.dev.intouch.io/library/api/v3?id=2ca14077-9213-4043-a4dc-315d95e6b09b`.
+The `{{base_url}}` placeholder will be replaced with the actual value defined in the `isl-prod.postman_environment.json` file, making the request URL: `https://api.intouch.io/library/api/v3?id=2ca14077-9213-4043-a4dc-315d95e6b09b`.
 
 
 ## Testing

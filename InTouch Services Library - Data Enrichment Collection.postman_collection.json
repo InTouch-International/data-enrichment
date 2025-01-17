@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "ff8ed0e8-8af5-4fe0-bafc-90ea8d7917e1",
+		"name": "InTouch Services Library - Data Enrichment Collection",
+		"description": "Requests using pre-populated sample information to obtain enrichment data.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30708145",
+		"_collection_link": "https://intouch-io.postman.co/workspace/InTouch-Library-Services~fa283ef9-a336-4391-b1e5-ebebaf028cc8/collection/12978221-ff8ed0e8-8af5-4fe0-bafc-90ea8d7917e1?action=share&source=collection_link&creator=30708145"
+	},
+	"item": [
+		{
+			"name": "Indiviual Data Enrichment",
+			"item": [
+				{
+					"name": "Email Address List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=c544e4cb-b346-4b77-9c42-5fbf81e65f4a&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "c544e4cb-b346-4b77-9c42-5fbf81e65f4a"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Telephone List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=9cb441e9-cb3a-456b-b0f4-6d6920c29540&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&AddNames=true&GetOwnerName=true&ShowLinks=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "9cb441e9-cb3a-456b-b0f4-6d6920c29540"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "AddNames",
+									"value": "true"
+								},
+								{
+									"key": "GetOwnerName",
+									"value": "true"
+								},
+								{
+									"key": "ShowLinks",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "People List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=392595a7-8297-4063-98df-4cf831ca0720&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&FirstName=Christopher&Surname=Burger&UsePP=false&UseDHAExtra=No&DOB=1977-07-07",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "392595a7-8297-4063-98df-4cf831ca0720"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "FirstName",
+									"value": "Christopher"
+								},
+								{
+									"key": "Surname",
+									"value": "Burger"
+								},
+								{
+									"key": "UsePP",
+									"value": "false"
+								},
+								{
+									"key": "UseDHAExtra",
+									"value": "No"
+								},
+								{
+									"key": "DOB",
+									"value": "1977-07-07"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IDV List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=da065595-12ae-448a-b6ed-818437cbb098&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&MaxCacheDays=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "da065595-12ae-448a-b6ed-818437cbb098"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dynamic Wrapper Eagle Eye",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=da065595-12ae-448a-b6ed-818437cbb098&PermissiblePurpose=Admin Purpose&IDNumber=9103085067083&Reference=Test&MaxCacheDays=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "da065595-12ae-448a-b6ed-818437cbb098"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "9103085067083"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=01931fe0-32f8-74b4-812e-c90ab6b57ab3&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&UseRankedScore=True",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "01931fe0-32f8-74b4-812e-c90ab6b57ab3"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "UseRankedScore",
+									"value": "True"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IDV Marital Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=b3e3d946-d9ec-401e-b0c1-85ece86a7df5&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&MaxCacheDays=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "b3e3d946-d9ec-401e-b0c1-85ece86a7df5"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IDV Deceased Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=bf08e688-fe10-410d-892f-7060ffd4f678&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&MaxCacheDays=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "bf08e688-fe10-410d-892f-7060ffd4f678"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IDV List Summary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=474650c1-f2e0-4e9c-8514-799a0f35d907&PermissiblePurpose=Admin Purpose&IDNumber=9103085067083&Reference=Test&MaxCacheDays=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "474650c1-f2e0-4e9c-8514-799a0f35d907"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "9103085067083"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dynamic Wrapper IDV Enquiry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}?id=bdd053aa-239b-4f4c-96e3-425fc5a165a8&PermissiblePurpose=Admin Purpose&IDNumber=7707077777087&Reference=Test&MaxCacheDays=2&EnquiryReason=Test&EnquiryDoneBy=",
+							"host": [
+								"{{base_url}}"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "bdd053aa-239b-4f4c-96e3-425fc5a165a8"
+								},
+								{
+									"key": "PermissiblePurpose",
+									"value": "Admin Purpose"
+								},
+								{
+									"key": "IDNumber",
+									"value": "7707077777087"
+								},
+								{
+									"key": "Reference",
+									"value": "Test"
+								},
+								{
+									"key": "MaxCacheDays",
+									"value": "2"
+								},
+								{
+									"key": "EnquiryReason",
+									"value": "Test"
+								},
+								{
+									"key": "EnquiryDoneBy",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authorisation",
+			"item": [
+				{
+					"name": "Get Authorisation Token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{client_secret}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{auth_url}}/token",
+							"host": [
+								"{{auth_url}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
